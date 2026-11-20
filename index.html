@@ -1,0 +1,280 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bank Security Awareness Demo</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #e8f1ff;
+    color: #092b57;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.browser {
+    max-width: 1200px;
+    margin: 20px auto;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+}
+
+/* Browser bar */
+.browser-bar {
+    height: 65px;
+    background: #e8edf5;
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    gap: 12px;
+}
+
+.dot {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+}
+
+.red { background: #ff5555; }
+.yellow { background: #ffca55; }
+.green { background: #35c477; }
+
+.address {
+    margin-left: 25px;
+    background: white;
+    padding: 12px 25px;
+    border-radius: 30px;
+    flex: 1;
+    color: #17365e;
+    font-weight: bold;
+}
+
+/* Navigation */
+nav {
+    background: #07366f;
+    color: white;
+    padding: 25px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+nav span {
+    margin-left: 25px;
+    font-size: 17px;
+}
+
+/* Main section */
+main {
+    padding: 45px;
+    background: linear-gradient(145deg, #ffffff, #e8f2ff);
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.shield {
+    font-size: 100px;
+    background: #176bc0;
+    color: white;
+    width: 180px;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 35px;
+}
+
+.hero-text {
+    border-left: 5px solid #176bc0;
+    padding-left: 30px;
+}
+
+.hero-text h1 {
+    font-size: clamp(28px, 5vw, 65px);
+    color: #092e63;
+}
+
+.hero-text h2 {
+    font-size: clamp(17px, 3vw, 34px);
+}
+
+/* Alert */
+.alert {
+    background: #d8eaff;
+    border: 2px solid #80b8f7;
+    padding: 25px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    line-height: 1.8;
+    font-size: 19px;
+}
+
+/* Demo fields */
+.demo-field {
+    background: white;
+    border: 2px solid #aebed2;
+    border-radius: 15px;
+    padding: 20px 30px;
+    margin: 15px auto;
+    max-width: 900px;
+}
+
+.demo-field h3 {
+    font-size: 23px;
+    margin-bottom: 5px;
+}
+
+.demo-field p {
+    color: #78869b;
+    font-size: 19px;
+}
+
+.demo-button {
+    display: block;
+    background: #07366f;
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    max-width: 650px;
+    margin: 25px auto;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #526780;
+    font-size: 14px;
+}
+
+@media(max-width: 650px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav span {
+        margin: 8px;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text {
+        border-left: none;
+        padding: 0;
+    }
+
+    .shield {
+        width: 120px;
+        height: 120px;
+        font-size: 65px;
+    }
+
+    .browser-bar {
+        padding: 12px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="browser">
+
+    <div class="browser-bar">
+        <div class="dot red"></div>
+        <div class="dot yellow"></div>
+        <div class="dot green"></div>
+
+        <div class="address">
+            🔒 Bank Security Awareness Demo
+        </div>
+    </div>
+
+    <nav>
+        <div class="logo">🏦 Our Bank</div>
+
+        <div>
+            <span>Personal</span>
+            <span>Business</span>
+            <span>Help</span>
+        </div>
+    </nav>
+
+    <main>
+
+        <section class="hero">
+
+            <div class="shield">🔒</div>
+
+            <div class="hero-text">
+                <h1>BANK SECURITY</h1>
+                <h2>AWARENESS TRAINING DEMO</h2>
+            </div>
+
+        </section>
+
+        <section class="alert">
+            <strong>ℹ️ This is a training simulation only.</strong>
+            <p>
+                A legitimate bank will never ask for your PIN
+                through a text message link.
+            </p>
+        </section>
+
+        <div class="demo-field">
+            <h3>💳 Account Number</h3>
+            <p>DEMO ONLY</p>
+        </div>
+
+        <div class="demo-field">
+            <h3>🔐 PIN</h3>
+            <p>Never requested</p>
+        </div>
+
+        <div class="demo-button">
+            Training Example – No Data Collected
+        </div>
+
+    </main>
+
+    <footer>
+        © 2026 Bank Security Awareness Project
+        <br>
+        Educational Demonstration Only
+    </footer>
+
+</div>
+
+</body>
+</html>
